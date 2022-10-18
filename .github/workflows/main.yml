@@ -10,4 +10,8 @@ jobs:
     name: check-notebooks
     runs-on: ubuntu-latest
     steps:
-      - uses: ResearchSoftwareActions/EnsureCleanNotebooksAction@1.1
+      - name: Checkout
+        uses: actions/checkout@v2
+        
+      - name: Ensure clean notebooks
+        uses: ResearchSoftwareActions/EnsureCleanNotebooksAction@1.1
